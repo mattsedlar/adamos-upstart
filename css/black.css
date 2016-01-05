@@ -29,7 +29,10 @@
 .section_thumbnails h3,
 .featuretext_middle > h3 {
 	color: #222;
-	border-bottom: 1px solid #EEE;
+	border-bottom: 2px solid #00add2;
+        text-transform: uppercase;
+        width: 120px;
+        margin: 0 auto;
 }
 .site-info {
 	border-top: 1px solid #444;
