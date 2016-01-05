@@ -876,6 +876,7 @@ h1.page-title {
 	margin: 0.4em 0 0.2em;
 	padding-top: 10px;
 	color: #00add2;
+        line-height: 1.25em;
 }
 h1.entry-title a {
 	text-decoration: none;
@@ -1429,8 +1430,8 @@ More info available with at http://www.apache.org/licenses/
 
 .featuretext {
 	border-radius:0.4em;
-	background-color: #F7F7F7;
-	border-bottom: 1px solid #EFEFEF;
+	// background-color: #F7F7F7;
+	// border-bottom: 1px solid #EFEFEF;
 	margin-bottom:20px;
 	padding: 20px;
 	text-align: center;
@@ -1454,6 +1455,49 @@ More info available with at http://www.apache.org/licenses/
 }
 .featuretext img{
 	max-width: 100%;
+}
+
+/* =Social Media
+------------------------------------------------------ */
+
+ul#social-media li { margin-right: 12px; }
+ul#social-media li:last-child { margin-right: 0; }
+
+ul#social-media li a,
+ul#social-media li a:hover {
+   text-decoration: none;
+}	
+
+ul#social-media li#facebook, 
+ul#social-media li#facebook a,
+ul#social-media li#instagram,
+ul#social-media li#instagram a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#facebook { 
+background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
+background-position: 0px 0px; 
+}
+
+#instagram { 
+background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
+background-position: -31px 0px; 
+}
+
+ul#social-media li#twitter, 
+ul#social-media li#twiter a {
+    display: inline-block;
+    width: 42px;
+    height: 30px;
+}
+
+
+#twitter { 
+background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
+background-position: -61px 0px;  
 }
 
 /* CUSTOM HOMEPAGE WIDGET LAYOUTS */

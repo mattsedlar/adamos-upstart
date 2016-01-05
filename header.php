@@ -87,12 +87,19 @@
                     <a href="#content" title="<?php esc_attr_e( 'Skip to content', 'adamos' ); ?>"><?php _e( 'Skip to content', 'adamos' ); ?></a>
                 </div>
 
+	<!-- SOCIAL MEDIA -->
+	<ul id="social-media">
+		<li id="facebook"><a></a></li>
+		<li id="instagram"><a></a></li>
+		<li id="twitter"><a></a></li>
+	</ul>
+	<!-- END SOCIAL MEDIA -->
+
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
             </nav><!-- .site-navigation .main-navigation -->
 
         </header><!-- #masthead .site-header -->
-
 
 	</div><!-- #masthead-wrap -->
 
@@ -138,7 +145,7 @@
                 <ul class="slides">
                   <?php  while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
                     <li>
-                      <?php the_post_thumbnail(); ?>
+                      <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
                       <div class="caption_wrap">
                         <div class="flex-caption">
                           <div class="flex-caption-title">
