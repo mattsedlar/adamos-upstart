@@ -180,5 +180,8 @@
 
     <?php endif; ?>
 
+	<!-- Home Page Custom One Widget -->
+
+   <?php dynamic_sidebar( 'hp_custom_1' ); ?>
 
 	<div id="main" class="site-main">

@@ -1404,7 +1404,7 @@ More info available with at http://www.apache.org/licenses/
 ------------------------------------------------------ */
 .featuretext_top {
 	padding: 2px;
-	margin: 0 auto;
+	margin: 24px auto;
         text-align: center;
 	width: 960px;
 }
@@ -1455,6 +1455,29 @@ More info available with at http://www.apache.org/licenses/
 }
 .featuretext img{
 	max-width: 100%;
+}
+
+/* =Home Page Custom Widgets
+------------------------------------------------------ */
+
+#hp_custom_one {
+  background: url('../../../wp-content/uploads/2016/01/upstart-cover-photo.jpg') no-repeat;
+  background-position: center;
+  height: auto;
+  padding: 24px;
+}
+
+#hp_custom_one h3 {
+  color: #fff;
+  border-bottom: 2px solid #ffd200;
+}
+
+#hp_custom_one div.textwidget {
+  color: #fff;
+  text-align: center;
+  margin: 24px auto;
+  font-size: 2.4em;
+  width: 50%;
 }
 
 /* =Social Media
@@ -1520,13 +1543,12 @@ background-position: -61px 0px;
 
 
 .section_thumbnails h3,
+#hp_custom_one h3,
 .featuretext_middle > h3{
 	font-family: 'open_sansregular', sans-serif;
-	color: #222;
 	font-size:2rem;
 	font-size: 20px;
 	padding: 2px;
-	border-bottom: 1px solid #00add2;
         text-align: center;
 }
 .thumbs-more-link{

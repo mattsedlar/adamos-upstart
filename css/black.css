@@ -27,12 +27,16 @@
 	color: #222;
 }
 .section_thumbnails h3,
+#hp_custom_one h3,
 .featuretext_middle > h3 {
-	color: #222;
-	border-bottom: 2px solid #00add2;
         text-transform: uppercase;
-        width: 120px;
+        display: table;
         margin: 0 auto;
+}
+.section_thumbnails h3,
+.featuretext_middle > h3 {
+       color: #222;
+       border-bottom: 2px solid #00add2;
 }
 .site-info {
 	border-top: 1px solid #444;
