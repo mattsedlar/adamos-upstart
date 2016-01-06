@@ -173,6 +173,15 @@ function adamos_widgets_init() {
 			'after_title'   => '</h4>'
 		));
 		register_sidebar(array(
+			'name' => 'Social Media Header',
+			'id'   => 'social-header',
+			'description'   => 'Widget area for social media',
+			'before_widget' => '<div>',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>'
+		));
+		register_sidebar(array(
 			'name' => 'Home Page Custom 1',
 			'id'   => 'hp_custom_1',
 			'description'   => 'Widget area for custom home page',
@@ -181,6 +190,16 @@ function adamos_widgets_init() {
 			'before_title'  => '<h3>',
 			'after_title'   => '</h3>'
 		));
+		register_sidebar(array(
+			'name' => 'Home Page Custom 2',
+			'id'   => 'hp_custom_2',
+			'description'   => 'Widget area for custom home page',
+			'before_widget' => '<div id="hp_custom_two" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>'
+		));
+
 
 }
 add_action( 'widgets_init', 'adamos_widgets_init' );

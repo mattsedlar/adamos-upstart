@@ -1463,6 +1463,7 @@ More info available with at http://www.apache.org/licenses/
 #hp_custom_one {
   background: url('../../../wp-content/uploads/2016/01/upstart-cover-photo.jpg') no-repeat;
   background-position: center;
+  background-color: #666;
   height: auto;
   padding: 24px;
 }
@@ -1480,6 +1481,49 @@ More info available with at http://www.apache.org/licenses/
   width: 50%;
 }
 
+#hp_custom_two {
+  background-color: #00add2;
+  height: auto;
+  padding: 24px;
+}
+
+#hp_custom_two h3 {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+#hp_custom_two_list { margin-top: 12px; }
+
+ul#hp_custom_two_list li {
+  display:inline-block;
+  width: 208px;
+  border-right: 1px solid #fff;
+  border-bottom: 0;
+  text-align: center;
+  height: 100px;
+}
+
+ul#hp_custom_two_list li:first-child {
+ background: url('../../../wp-content/uploads/2016/01/approach-icons.jpg');
+ background-position: -21px -173px;
+}
+
+ul#hp_custom_two_list li:nth-child(2) {
+ background: url('../../../wp-content/uploads/2016/01/approach-icons.jpg');
+ background-position: -231px -173px;
+}
+
+ul#hp_custom_two_list li:nth-child(3) {
+ background: url('../../../wp-content/uploads/2016/01/approach-icons.jpg');
+ background-position: -458px -173px;
+}
+
+ul#hp_custom_two_list li:last-child {
+ background: url('../../../wp-content/uploads/2016/01/approach-icons.jpg');
+ background-position: -667px -173px;
+  border-right: 0px;
+}
+
 /* =Social Media
 ------------------------------------------------------ */
 
@@ -1488,7 +1532,8 @@ ul#social-media li:last-child { margin-right: 0; }
 
 ul#social-media li a,
 ul#social-media li a:hover {
-   text-decoration: none;
+    background:transparent;
+    cursor: pointer;
 }	
 
 ul#social-media li#facebook, 
@@ -1496,8 +1541,8 @@ ul#social-media li#facebook a,
 ul#social-media li#instagram,
 ul#social-media li#instagram a {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 23px;
 }
 
 #facebook { 
@@ -1507,20 +1552,21 @@ background-position: 0px 0px;
 
 #instagram { 
 background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
-background-position: -31px 0px; 
+background-position: -24px 0px; 
 }
 
 ul#social-media li#twitter, 
-ul#social-media li#twiter a {
+ul#social-media li#twitter a {
     display: inline-block;
-    width: 42px;
-    height: 30px;
+    cursor: pointer;
+    width: 30px;
+    height: 23px;
 }
 
 
 #twitter { 
 background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
-background-position: -61px 0px;  
+background-position: -49px 0px;  
 }
 
 /* CUSTOM HOMEPAGE WIDGET LAYOUTS */
@@ -1544,6 +1590,7 @@ background-position: -61px 0px;
 
 .section_thumbnails h3,
 #hp_custom_one h3,
+#hp_custom_two h3,
 .featuretext_middle > h3{
 	font-family: 'open_sansregular', sans-serif;
 	font-size:2rem;
@@ -1691,6 +1738,8 @@ MEDIA QUERIES
 	#content {
 		padding-left:4px;
 	}
+
+	ul#social-media { display:none; }
 }
 
 /* for 860px or less */
@@ -1747,6 +1796,7 @@ MEDIA QUERIES
 	.authorlist {
 		width: 100%;
 	}
+        .featuretext_top { width: 100%; }
 }
 
 /* for 600px or less */
@@ -1895,7 +1945,8 @@ MEDIA QUERIES
 	.span_1_of_8 {
 		width: 100%;
 	}
-	.featuretext_top h3{
+	.featuretext_top h3,
+	#hp_custom_one div.textwidget {
 	font-size:1.2rem;
 	font-size:12px;
 	padding: 6px;

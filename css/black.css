@@ -28,6 +28,7 @@
 }
 .section_thumbnails h3,
 #hp_custom_one h3,
+#hp_custom_two h3,
 .featuretext_middle > h3 {
         text-transform: uppercase;
         display: table;

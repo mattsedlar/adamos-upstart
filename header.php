@@ -87,13 +87,9 @@
                     <a href="#content" title="<?php esc_attr_e( 'Skip to content', 'adamos' ); ?>"><?php _e( 'Skip to content', 'adamos' ); ?></a>
                 </div>
 
-	<!-- SOCIAL MEDIA -->
-	<ul id="social-media">
-		<li id="facebook"><a></a></li>
-		<li id="instagram"><a></a></li>
-		<li id="twitter"><a></a></li>
-	</ul>
-	<!-- END SOCIAL MEDIA -->
+	<!-- Social Media Custom One Widget -->
+
+	<?php dynamic_sidebar( 'social-header' ); ?>
 
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 
@@ -180,8 +176,5 @@
 
     <?php endif; ?>
 
-	<!-- Home Page Custom One Widget -->
-
-   <?php dynamic_sidebar( 'hp_custom_1' ); ?>
 
 	<div id="main" class="site-main">
