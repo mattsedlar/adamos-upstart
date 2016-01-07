@@ -131,7 +131,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
 	margin: 0.6em 0;
-	font-family: 'open_sansbold', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 h1 {
 	font-size: 28px;
@@ -428,7 +428,7 @@ a:active {
 .comment-meta,
 .comment-author,
 #reply-title {
-	font-family: 'open_sansregular', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .more-link {
@@ -725,7 +725,7 @@ a:active {
 	display: none;
 	float: left;
 	position: absolute;
-	top: 1.8em;
+	top: 1.55em;
 	left: -0.2em;
 	z-index: 99999;
 	padding: 0.4em;
@@ -870,7 +870,7 @@ a:active {
 }
 h1.entry-title,
 h1.page-title {
-	font-family: sans-serif;
+	font-family: 'Raleway',sans-serif;
 	font-size: 16px;
         font-size: 2.4em;
 	margin: 0.4em 0 0.2em;
@@ -1416,7 +1416,13 @@ More info available with at http://www.apache.org/licenses/
 	text-align:center;
 	font-size:2.4rem;
 	font-size:24px;
-	font-family: 'open_sansregular', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
+.featuretext_top h3::before {
+        content: 'UpStart ';
+        font-weight: bold;
+        color: #00add2;
 }
 
 .featuretext_top p{
@@ -1474,6 +1480,7 @@ More info available with at http://www.apache.org/licenses/
 }
 
 #hp_custom_one div.textwidget {
+  font-family: 'Raleway', sans-serif;
   color: #fff;
   text-align: center;
   margin: 24px auto;
@@ -1485,6 +1492,7 @@ More info available with at http://www.apache.org/licenses/
   background-color: #00add2;
   height: auto;
   padding: 24px;
+  text-align: center;
 }
 
 #hp_custom_two h3 {
@@ -1504,6 +1512,7 @@ ul#hp_custom_two_list li {
   border-bottom: 0;
   text-align: center;
   height: 200px;
+  font-family: 'Raleway', sans-serif;
 }
 
 ul#hp_custom_two_list li:first-child {

@@ -34,6 +34,7 @@
 <![endif]-->
 
 <?php wp_head(); ?>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 
 <body <?php body_class(); ?>>
@@ -176,5 +177,12 @@
 
     <?php endif; ?>
 
+	<?php if (is_front_page()) : ?>
+
+	   <!-- Home Page Custom One Widget -->
+
+	   <?php dynamic_sidebar( 'hp_custom_1' ); ?>
+
+	<?php endif; ?>
 
 	<div id="main" class="site-main">

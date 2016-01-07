@@ -11,6 +11,14 @@
 
 	</div><!-- #main .site-main -->
 
+	<?php if (is_front_page()) : ?>
+
+		<!-- Home Page Custom Two Widget -->
+
+       		<?php dynamic_sidebar( 'hp_custom_2' ); ?>
+	
+	<?php endif; ?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<?php if(! get_theme_mod('hide_footer_widgets')): ?>

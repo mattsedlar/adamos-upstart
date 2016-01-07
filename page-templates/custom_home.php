@@ -8,11 +8,6 @@
  */
 
 get_header(); ?>
-
-	<!-- Home Page Custom One Widget -->
-
-   <?php dynamic_sidebar( 'hp_custom_1' ); ?>
-
         
   <div id="primary_home" class="content-area">
 		
@@ -65,9 +60,6 @@ get_header(); ?>
 
     <?php endif; ?>
 
-	<!-- Home Page Custom Two Widget -->
-
-   <?php dynamic_sidebar( 'hp_custom_2' ); ?>
 
     <?php if(! get_theme_mod('homepage_recent_bool')): ?>
 
