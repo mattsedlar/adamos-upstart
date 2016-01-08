@@ -772,6 +772,20 @@ a:active {
 	border-radius: 0;
 }
 
+/* Footer navigation */
+
+#menu-footer li {
+       display: inline-block;
+       border-bottom: 0;
+       margin-right: 24px;
+}
+
+#menu-footer li a {
+       font-weight: bold;
+       color: #000;
+       text-transform: uppercase;
+}
+
 /* Small menu */
 .menu-toggle {
 	color: #FFF;
@@ -1550,44 +1564,47 @@ ul#hp_custom_two_list li p {
 /* =Social Media
 ------------------------------------------------------ */
 
-ul#social-media li { margin-right: 12px; }
-ul#social-media li:last-child { margin-right: 0; }
+ul.social-media-icons li { margin-right: 12px; }
+ul.social-media-icons li:last-child { margin-right: 0; }
 
-ul#social-media li a,
-ul#social-media li a:hover {
+ul.social-media-icons li a,
+ul.social-media-icons li a:hover {
     background:transparent;
     cursor: pointer;
 }	
 
-ul#social-media li#facebook, 
-ul#social-media li#facebook a,
-ul#social-media li#instagram,
-ul#social-media li#instagram a {
+ul.social-media-icons li.facebook, 
+ul.social-media-icons li.facebook a,
+ul.social-media-icons li.instagram,
+ul.social-media-icons li.instagram a {
     display: inline-block;
     width: 24px;
     height: 23px;
+    padding: 0;
+    border-bottom: 0;
 }
 
-#facebook { 
+.facebook { 
 background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
 background-position: 0px 0px; 
 }
 
-#instagram { 
+.instagram { 
 background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
 background-position: -24px 0px; 
 }
 
-ul#social-media li#twitter, 
-ul#social-media li#twitter a {
+ul.social-media-icons li.twitter, 
+ul.social-media-icons li.twitter a {
     display: inline-block;
     cursor: pointer;
     width: 30px;
     height: 23px;
+    padding: 0;
+    border-bottom: 0;
 }
 
-
-#twitter { 
+.twitter { 
 background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
 background-position: -49px 0px;  
 }
@@ -1762,7 +1779,7 @@ MEDIA QUERIES
 		padding-left:4px;
 	}
 
-	ul#social-media { display:none; }
+	ul.social-media-list { display:none; }
 
         ul#hp_custom_two_list li:first-child,
         ul#hp_custom_two_list li:nth-child(2),
