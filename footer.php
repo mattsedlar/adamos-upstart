@@ -16,6 +16,8 @@
 		<!-- Home Page Custom Two Widget -->
 
        		<?php dynamic_sidebar( 'hp_custom_2' ); ?>
+
+       		<?php dynamic_sidebar( 'hp_custom_3' ); ?>
 	
 	<?php endif; ?>
 

@@ -200,7 +200,15 @@ function adamos_widgets_init() {
 			'after_title'   => '</h3>'
 		));
 
-
+		register_sidebar(array(
+			'name' => 'Home Page Custom 3',
+			'id'   => 'hp_custom_3',
+			'description'   => 'Widget area for custom home page',
+			'before_widget' => '<div id="hp_custom_three" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>'
+		));
 }
 add_action( 'widgets_init', 'adamos_widgets_init' );
 
