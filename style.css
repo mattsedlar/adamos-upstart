@@ -1850,6 +1850,8 @@ MEDIA QUERIES
 }
 
         .featuretext_top { width: 100%; }
+
+        #hp_custom_two table td { font-size: small; }
 }
 
 
