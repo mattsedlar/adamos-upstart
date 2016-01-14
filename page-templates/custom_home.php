@@ -56,8 +56,9 @@ get_header(); ?>
             </div>
 
         </div> 
-      </div> 
 
+      </div> 
+    <?php dynamic_sidebar( 'hp_hub_text' ); ?>
     <?php endif; ?>
 
 

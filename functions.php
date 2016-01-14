@@ -201,6 +201,16 @@ function adamos_widgets_init() {
 		));
 
 		register_sidebar(array(
+			'name' => 'Hub Text',
+			'id'   => 'hp_hub_text',
+			'description'   => 'Widget area for text underneath Our Hubs',
+			'before_widget' => '<div id="hp_hub_text" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>'
+		));
+
+		register_sidebar(array(
 			'name' => 'Home Page Custom 3',
 			'id'   => 'hp_custom_3',
 			'description'   => 'Widget area for custom home page',

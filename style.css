@@ -1452,8 +1452,8 @@ More info available with at http://www.apache.org/licenses/
 	border-radius:0.4em;
 	// background-color: #F7F7F7;
 	// border-bottom: 1px solid #EFEFEF;
-	margin-bottom:20px;
-	padding: 20px;
+	margin-bottom:6px;
+	padding: 12px;
 	text-align: center;
 }
 
@@ -1557,6 +1557,14 @@ More info available with at http://www.apache.org/licenses/
 
 #hp_custom_three h3 {
   border-bottom: 2px solid #00add2;
+}
+
+#hp_hub_text {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: -12px auto 24px auto;
+  font-size: 1.5em;
+  width: 75%;
 }
 
 /* =Social Media
