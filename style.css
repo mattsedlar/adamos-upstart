@@ -708,6 +708,8 @@ a:active {
 	margin: 0.5em 0;
 	position: relative;
 }
+.main-navigation li:last-child a { margin-right: 0; }
+
 .main-navigation a {
 	color: #FFF;
     display: block;
@@ -771,6 +773,8 @@ a:active {
 	background-color: #222;
 	border-radius: 0;
 }
+
+#menu-header li:last-child { background: #000; }
 
 /* Footer navigation */
 
@@ -950,7 +954,8 @@ h1.entry-title a {
 	margin: 0 0 1.5em 1.5em;
 }
 .entry-content a, .entry-content a:visited, .entry-summary a, .entry-summary a:visited{
-    color: #69C;
+    color: #00add2;
+    font-weight: bold;
 }
 .entry-content a:hover, .entry-summary a:hover{
     color: #666;
@@ -1492,7 +1497,8 @@ More info available with at http://www.apache.org/licenses/
   border-bottom: 2px solid #ffd200;
 }
 
-#hp_custom_one div.textwidget {
+#hp_custom_one div.textwidget,
+#hp_custom_three div.textwidget {
   font-family: 'Raleway', sans-serif;
   color: #fff;
   text-align: center;
@@ -1508,8 +1514,12 @@ More info available with at http://www.apache.org/licenses/
   text-align: center;
 }
 
-#hp_custom_two h3 {
+#hp_custom_two h3,
+#hp_custom_three h3 {
   color: #fff;
+}
+
+#hp_custom_two h3 {
   border-bottom: 2px solid #fff;
 }
 
@@ -1527,6 +1537,7 @@ More info available with at http://www.apache.org/licenses/
     text-align: center;
     padding: 12px;
     border-right: 1px solid #fff;
+    width: 33%;
 }
 
 #hp_custom_two table td:last-child { border-right: 0; }
@@ -1539,13 +1550,12 @@ More info available with at http://www.apache.org/licenses/
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: 48px;
+  margin: 48px 0;
   height: auto;
   padding: 24px;
 }
 
 #hp_custom_three h3 {
-  color: #00add2;
   border-bottom: 2px solid #00add2;
 }
 
@@ -1975,7 +1985,8 @@ MEDIA QUERIES
 		width: 100%;
 	}
 	.featuretext_top h3,
-	#hp_custom_one div.textwidget {
+	#hp_custom_one div.textwidget,
+	#hp_custom_three div.textwidget {
 	font-size:1.2rem;
 	font-size:12px;
 	padding: 6px;
@@ -1985,4 +1996,14 @@ MEDIA QUERIES
 	font-size:12px;
 	padding: 6px;
 	}
+}
+
+@media only screen and (max-width: 320px) {
+
+#hp_custom_two table td { 
+  display: block; 
+  width: 90%; 
+  border-right: 0px;
+}
+
 }
