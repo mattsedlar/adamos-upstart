@@ -713,8 +713,8 @@ a:active {
 .main-navigation a {
 	color: #FFF;
     display: block;
-    font-size: 1.1rem;
-	font-size: 11px;
+    font-size: 1.3rem;
+	font-size: 13px;
     font-weight: normal;
 
     margin-right: 1em;
@@ -1489,7 +1489,7 @@ More info available with at http://www.apache.org/licenses/
   -o-background-size: cover;
   background-size: cover;
   height: auto;
-  padding: 24px;
+  padding: 100px;
 }
 
 #hp_custom_one h3 {
@@ -1552,7 +1552,7 @@ More info available with at http://www.apache.org/licenses/
   background-size: cover;
   margin: 48px 0;
   height: auto;
-  padding: 24px;
+  padding: 100px;
 }
 
 #hp_custom_three h3 {
@@ -1563,9 +1563,11 @@ More info available with at http://www.apache.org/licenses/
   font-family: 'Raleway', sans-serif;
   text-align: center;
   margin: -12px auto 24px auto;
-  font-size: 1.5em;
+  font-size: 1.25em;
   width: 75%;
 }
+
+#hp_hub_text a { color: #000; }
 
 /* =Social Media
 ------------------------------------------------------ */
