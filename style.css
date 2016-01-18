@@ -708,7 +708,6 @@ a:active {
 	margin: 0.5em 0;
 	position: relative;
 }
-.main-navigation li:last-child a { margin-right: 0; }
 
 .main-navigation a {
 	color: #FFF;
@@ -774,7 +773,13 @@ a:active {
 	border-radius: 0;
 }
 
-#menu-header li:last-child { background: #000; }
+.main-navigation li:last-child { background: #4d4d4f; }
+
+.main-navigation li:last-child a { margin-right: 0; color: yellow; }
+
+.sub-menu li:last-child { background: #222; }
+
+.sub-menu li:last-child a { color: #fff; }
 
 /* Footer navigation */
 
@@ -1420,7 +1425,7 @@ More info available with at http://www.apache.org/licenses/
 	padding: 2px;
 	margin: 24px auto;
         text-align: center;
-	width: 960px;
+	width: 50%;
 }
 
 .featuretext_top h3{
@@ -1489,7 +1494,7 @@ More info available with at http://www.apache.org/licenses/
   -o-background-size: cover;
   background-size: cover;
   height: auto;
-  padding: 100px;
+  padding: 90px;
 }
 
 #hp_custom_one h3 {
@@ -1504,13 +1509,20 @@ More info available with at http://www.apache.org/licenses/
   text-align: center;
   margin: 24px auto;
   font-size: 2.2em;
-  width: 50%;
+  width: 75%;
+}
+
+#hp_custom_one div.textwidget a,
+#hp_custom_three div.textwidget a {
+  color: #fff;
+  text-decoration: underline;
 }
 
 #hp_custom_two {
   background-color: #00add2;
   height: auto;
   padding: 24px;
+  margin: 0;
   text-align: center;
 }
 
@@ -1550,9 +1562,9 @@ More info available with at http://www.apache.org/licenses/
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 48px 0;
+  margin: 0;
   height: auto;
-  padding: 100px;
+  padding: 90px;
 }
 
 #hp_custom_three h3 {
@@ -1567,13 +1579,16 @@ More info available with at http://www.apache.org/licenses/
   width: 75%;
 }
 
-#hp_hub_text a { color: #000; }
+#hp_hub_text a { color: #000; text-decoration: underline; }
 
 /* =Social Media
 ------------------------------------------------------ */
 
+#social-header li:hover > a { background-color: transparent; }
+
 ul.social-media-icons li { margin-right: 12px; }
-ul.social-media-icons li:last-child { margin-right: 0; }
+ul.social-media-icons li:last-child,
+ul.social-media-icons li:nth-child(3) { margin-right: 0; }
 
 ul.social-media-icons li a,
 ul.social-media-icons li a:hover {
@@ -2008,7 +2023,7 @@ MEDIA QUERIES
 	}
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 370px) {
 
 #hp_custom_two table td { 
   display: block; 
