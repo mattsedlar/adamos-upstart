@@ -681,6 +681,15 @@ a:active {
 	float: left;
 }
 
+/* THIS IS THE BETA STYLE THAT SHOULD BE DELETED AFTER BETA PERIOD IS OVER */
+
+.site-logo::after {
+  content: "beta";
+  color: #ffd200;
+}
+
+/* END BETA STYLE */
+
 /* =Menu
 ----------------------------------------------- */
 
@@ -722,7 +731,7 @@ a:active {
 	padding: 0.2em 0.8em
 }
 .main-navigation ul ul {
-	background: #222;
+	background: #4d4d4f;
 	display: none;
 	float: left;
 	position: absolute;
@@ -746,14 +755,14 @@ a:active {
 .main-navigation li.current-menu-item a {
 	color: #FFF;
 	display: block;
-	background-color: #666;
+	background-color: #4d4d4f;
 	border-radius: 0.2em;
 }
 
 .main-navigation ul ul a:hover {
 	color: #FFF;
 	display: block;
-	background-color: #222;
+	background-color: #000;
 	border-radius: 0;
 }
 
@@ -773,13 +782,13 @@ a:active {
 	border-radius: 0;
 }
 
-.main-navigation li:last-child { background: #4d4d4f; }
+.main-navigation li:last-child { background: #000; }
 
 .main-navigation li:last-child a { margin-right: 0; color: yellow; }
 
-.sub-menu li:last-child { background: #222; }
+.sub-menu li:last-child { background: #4d4d4f; }
 
-.sub-menu li:last-child a { color: #fff; }
+.sub-menu li:last-child a { color: #ccc; }
 
 /* Footer navigation */
 
@@ -1101,7 +1110,6 @@ img[class*="wp-image-"],
 .widget img,
 img.size-full {
 	max-width: 100%;
-	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -1598,8 +1606,8 @@ ul.social-media-icons li a:hover {
 
 ul.social-media-icons li.facebook, 
 ul.social-media-icons li.facebook a,
-ul.social-media-icons li.instagram,
-ul.social-media-icons li.instagram a {
+ul.social-media-icons li.linkedin,
+ul.social-media-icons li.linkedin a {
     display: inline-block;
     width: 24px;
     height: 23px;
@@ -1612,9 +1620,9 @@ background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.pn
 background-position: 0px 0px; 
 }
 
-.instagram { 
+.linkedin { 
 background: url('../../../wp-content/uploads/2016/01/social-media-logos-white.png'); 
-background-position: -24px 0px; 
+background-position: -23px 0px; 
 }
 
 ul.social-media-icons li.twitter, 
@@ -1803,7 +1811,7 @@ MEDIA QUERIES
 		padding-left:4px;
 	}
 
-	ul.social-media-icons { display:none; }
+	#social-header { display:none; }
 
 
 }
@@ -2021,6 +2029,14 @@ MEDIA QUERIES
 	font-size:12px;
 	padding: 6px;
 	}
+	.footer_container { 
+          background-color: #000;
+        }
+        .site-footer .widget p { 
+          color: #FFF;
+          text-align: center; 
+        }
+        .site-footer .widget .social-media-icons { text-align:center; }
 }
 
 @media only screen and (max-width: 370px) {
