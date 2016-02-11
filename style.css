@@ -1895,6 +1895,7 @@ MEDIA QUERIES
         .featuretext_top { width: 100%; }
 
         #hp_custom_two table td { font-size: small; }
+	.sub-menu li:last-child { background: #000; }
 }
 
 
@@ -1932,6 +1933,7 @@ MEDIA QUERIES
 	height: 100%;
 	width: 100%;
 }
+
 }
 
 
